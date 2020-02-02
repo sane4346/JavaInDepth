@@ -44,6 +44,6 @@ public class HelloWorld {
 		ExceptionDemoClass exceptionDemoClass = new ExceptionDemoClass();
 		exceptionDemoClass.insideExceptionDemo();
 		
-		System.out.println("Hello Java");
+		System.out.println("Hello Java - Main function ends");
 	}
 }
