@@ -1,5 +1,7 @@
 package example.main;
 
+import example.exceptions.*;
+
 public class HelloWorld {
 	
     static void print() {
@@ -38,7 +40,10 @@ public class HelloWorld {
 
 	public static void main(String [] args)
 	{
-		primitives();
+		//primitives();
+		ExceptionDemoClass exceptionDemoClass = new ExceptionDemoClass();
+		exceptionDemoClass.insideExceptionDemo();
+		
 		System.out.println("Hello Java");
 	}
 }
