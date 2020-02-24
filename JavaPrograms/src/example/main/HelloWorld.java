@@ -1,6 +1,7 @@
 package example.main;
 
 import example.exceptions.*;
+import example.generics.GenericExample;
 
 public class HelloWorld {
 	
@@ -42,8 +43,13 @@ public class HelloWorld {
 	{
 		//primitives();
 		ExceptionDemoClass exceptionDemoClass = new ExceptionDemoClass();
-		exceptionDemoClass.insideExceptionDemo();
+		//exceptionDemoClass.insideExceptionDemo();
 		
-		System.out.println("Hello Java - Main function ends");
+		//Generic examples
+		GenericExample generic = new GenericExample();
+		generic.showGenericExample();
+		
+		
+		System.out.println("Main function ends");
 	}
 }
