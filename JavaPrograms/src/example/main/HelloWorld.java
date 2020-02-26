@@ -1,5 +1,6 @@
 package example.main;
 
+import example.IO.IOExample;
 import example.exceptions.*;
 import example.generics.GenericExample;
 
@@ -49,6 +50,11 @@ public class HelloWorld {
 		GenericExample generic = new GenericExample();
 		generic.showGenericExample();
 		
+		//IO example 
+		IOExample ioex = new IOExample();
+		
+		ioex.fileByteCopyWithoutBuffer();
+		//ioex.fileByteCopyWithBuffer();
 		
 		System.out.println("Main function ends");
 	}
