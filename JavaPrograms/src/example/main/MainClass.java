@@ -1,10 +1,13 @@
 package example.main;
 
 import example.IO.IOExample;
+import example.datastructures.SetDemo;
 import example.exceptions.*;
 import example.generics.GenericExample;
+import example.staticfinalboxedprimitives.Static_Final_BoxedPrimitives;
+import example.streams.StreamDemo;
 
-public class HelloWorld {
+public class MainClass {
 	
     static void print() {
         System.out.println("\n\nInside print ...");
@@ -55,6 +58,15 @@ public class HelloWorld {
 		
 		ioex.fileByteCopyWithoutBuffer();
 		//ioex.fileByteCopyWithBuffer();
+		StreamDemo streamDemo = new StreamDemo();
+		streamDemo.executeExamples();
+		
+		Static_Final_BoxedPrimitives staticfinalboxed = new Static_Final_BoxedPrimitives();
+		staticfinalboxed.assignment();
+		
+		SetDemo setDemo = new SetDemo();
+		setDemo.hashSetDemo();
+		setDemo.linkedHashSetDemo();
 		
 		System.out.println("Main function ends");
 	}
